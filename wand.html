@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-purple-100 to-indigo-200 p-4 sm:p-6 md:p-8">
+    <header class="mb-8">
+        <h1 id="store-name" class="text-3xl sm:text-4xl font-bold text-indigo-800"><a href="index.html" class="hover:text-indigo-600 transition duration-300">Wizard Shop</a></h1>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+        <div class="flex flex-col sm:flex-row gap-6">
+            <!-- Product Image -->
+            <!-- Product Image -->
+            <div class="sm:w-1/3 bg-white p-4 rounded-lg shadow-lg flex items-center justify-center">
+                <img src="Images/Wand-1.png" alt="Enchanted Wand" class="w-full h-auto max-w-xs object-contain">
+            </div>
+
+            <!-- Product Details -->
+            <div class="sm:w-2/3 bg-white p-6 rounded-lg shadow-lg">
+                <h2 id="product-name" class="text-2xl sm:text-3xl font-semibold text-indigo-800 mb-4">Enchanted Wand</h2>
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-400">
+                        <span class="text-xl sm:text-2xl">★★★★★</span>
+                    </div>
+                    <span class="ml-2 text-gray-600">(42 reviews)</span>
+                </div>
+                <p id="product-price" class="text-xl sm:text-2xl font-bold text-indigo-600 mb-4">$349.99</p>
+                <div id="product-description" class="text-gray-700 mb-6 space-y-4">
+                    <p>
+                        Unleash your magical potential with our Enchanted Wand, a conduit of pure arcane 
+                        energy. Crafted from the rare and resilient wood of the ancient Whispering Willow, this 
+                        wand channels and amplifies your innate magical abilities with unparalleled precision.
+                    </p>
+                    <p>
+                        At its core lies a phoenix feather, freely given and imbued with the essence of rebirth and 
+                        transformation. This powerful magical focus is further enhanced by a grip inlaid with 
+                        dragon heartstring, ensuring a seamless connection between caster and wand.
+                    </p>
+                    <p>
+                        The Enchanted Wand adapts to your unique magical signature, growing more attuned to 
+                        your needs with each spell cast. Its tip is adorned with a flawless moonstone, known for 
+                        enhancing intuition and emotional magic. Whether you're a seasoned spellcaster or just 
+                        beginning your magical journey, this wand will be your faithful companion in all your 
+                        arcane endeavors.
+                    </p>
+                </div>
+                <div class="flex items-center mb-6">
+                    <label for="quantity" class="mr-4 text-gray-700">Quantity:</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        min="1"
+                        value="1"
+                        class="border rounded px-2 py-1 w-16 text-center"
+                    />
+                </div>
+                <button class="bg-indigo-600 text-white px-6 py-3 rounded-full w-full mb-4 hover:bg-indigo-700 transition duration-300">
+                    Add to Cart
+                </button>
+                <button class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-full w-full hover:bg-indigo-50 transition duration-300">
+                    Add to Wishlist
+                </button>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="mt-12">
+            <h3 class="text-xl sm:text-2xl font-semibold text-indigo-800 mb-6">Other Magical Items You Might Like</h3>
+            <div id="related-products" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <a href="hat.html" class="block">
+                        <div class="w-full h-32 sm:h-40 flex items-center justify-center mb-4">
+                            <img src="Images/Hat-1.png" alt="Mystical Wizard Hat" class="w-full h-full object-contain">
+                        </div>
+                        <h4 class="text-sm sm:text-lg font-semibold text-indigo-700 hover:text-indigo-500">Mystical Wizard Hat</h4>
+                        <p class="text-gray-600">$729.99</p>
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <a href="grimoire.html" class="block">
+                        <div class="w-full h-32 sm:h-40 flex items-center justify-center mb-4">
+                            <img src="Images/Book-1.png" alt="Grimoire of Secrets" class="w-full h-full object-contain">
+                        </div>
+                        <h4 class="text-sm sm:text-lg font-semibold text-indigo-700 hover:text-indigo-500">Grimoire of Secrets</h4>
+                        <p class="text-gray-600">$579.99</p>
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <a href="brew.html" class="block">
+                        <div class="w-full h-32 sm:h-40 flex items-center justify-center mb-4">
+                            <img src="Images/Brew-1.png" alt="Alchemist's Brew Kit" class="w-full h-full object-contain">
+                        </div>
+                        <h4 class="text-sm sm:text-lg font-semibold text-indigo-700 hover:text-indigo-500">Alchemist's Brew Kit</h4>
+                        <p class="text-gray-600">$439.99</p>
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <a href="orb.html" class="block">
+                        <div class="w-full h-32 sm:h-40 flex items-center justify-center mb-4">
+                            <img src="Images/Orb-1.png" alt="Orb of Divination" class="w-full h-full object-contain">
+                        </div>
+                        <h4 class="text-sm sm:text-lg font-semibold text-indigo-700 hover:text-indigo-500">Orb of Divination</h4>
+                        <p class="text-gray-600">$689.99</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Time Offer -->
+        <div id="special-offer" class="mt-12 bg-yellow-100 border-yellow-400 border p-4 rounded-lg">
+            <p class="text-yellow-800">
+                ✨ Exclusive Offer: Acquire the Enchanted Wand and receive a complimentary Pocket Grimoire. 
+                Enter the incantation WIZARDCOMBO at checkout to unlock this magical bundle.
+            </p>
+        </div>
+    </main>
+
+    <footer class="mt-12 text-center text-gray-600">
+        <p>&copy; 2024 Wizard Shop. All rights reserved. Enchanted by the International Confederation of Wizards.</p>
+    </footer>
+</body>
+</html>
